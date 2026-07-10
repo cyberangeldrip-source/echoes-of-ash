@@ -1,20 +1,18 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#181714" />
-    <title>Echoes of Ash</title>
-  </head>
-  <body>
-    <main id="app">
-      <canvas id="world" aria-label="Echoes of Ash world view"></canvas>
-      <section id="boot" aria-live="polite">
-        <p class="eyebrow">WORLD SEED: EMBER-0001</p>
-        <h1>Echoes<br />of Ash</h1>
-        <p id="status">Waking the renderer...</p>
-      </section>
-    </main>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#181714"/><title>Echoes of Ash</title></head>
+<body>
+<main id="app">
+  <canvas id="world" aria-label="Echoes of Ash world view"></canvas>
+  <section id="boot" aria-live="polite"><p class="eyebrow">WORLD SEED: EMBER-0001</p><h1>Echoes<br/>of Ash</h1><p id="status">Waking the renderer...</p></section>
+  <section id="hud" hidden aria-label="Player status">
+    <div class="hud-top"><div><strong data-hud="biome">UNKNOWN SHORE</strong><span data-hud="weather">CLEAR</span></div><span data-hud="clock">DAY 01 · 06:40</span></div>
+    <div class="crosshair" aria-hidden="true"></div>
+    <p class="interaction" data-hud="interaction" hidden></p>
+    <div class="meters"><label>VITALITY <span class="meter vitality" data-hud="vitality"></span></label><label>STAMINA <span class="meter stamina" data-hud="stamina"></span></label></div>
+    <p class="captions" data-hud="captions" hidden aria-live="polite"></p>
+  </section>
+</main>
+<script type="module" src="/src/main.ts"></script>
+</body>
 </html>
