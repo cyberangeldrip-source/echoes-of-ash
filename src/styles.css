@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  color: oklch(91% 0.012 72);
+  background: oklch(13% 0.012 72);
+  font-family: 'IBM Plex Mono', monospace;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+html, body, #app { width: 100%; height: 100%; margin: 0; }
+body { overflow: hidden; }
+canvas { width: 100%; height: 100%; display: block; }
+#boot { position: fixed; inset: auto auto clamp(24px, 7vw, 88px) clamp(24px, 7vw, 88px); pointer-events: none; }
+.eyebrow { color: oklch(72% 0.035 70); font-size: 0.75rem; letter-spacing: 0.14em; }
+h1 { margin: 16px 0 24px; font: 700 clamp(4rem, 11vw, 10rem) / 0.72 'Barlow Condensed', sans-serif; letter-spacing: -0.055em; text-transform: uppercase; text-wrap: balance; }
+#status { color: oklch(73% 0.018 72); font-size: 0.875rem; line-height: 1.7; }
